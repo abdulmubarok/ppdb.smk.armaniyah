@@ -23,27 +23,27 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ppdb_asalsekolah`
+-- Struktur dari tabel `ppdb_smkarmaniyah`
 --
 
-CREATE TABLE `ppdb_asalsekolah` (
+CREATE TABLE `ppdb_smkarmaniyah` (
   `id` int(13) NOT NULL,
   `id_siswa` int(13) NOT NULL,
-  `npsn_sekolah` varchar(12) DEFAULT NULL,
-  `asal_sekolah` varchar(35) DEFAULT NULL,
-  `nama_sekolah` varchar(50) DEFAULT NULL,
-  `status_sekolah` enum('','Negeri','Swasta') DEFAULT NULL,
-  `alamat_sekolah` text,
+  `69949187` varchar(12) DEFAULT NULL,
+  `kp.tonjong rt.008/004` varchar(35) DEFAULT NULL,
+  `smkarmaniyah` varchar(50) DEFAULT NULL,
+  `swasta` enum('','Negeri','Swasta') DEFAULT NULL,
+  `kp.tonjong rt.008/004 ds.sukaragam kec.serang baru kab. bekasi` text,
   `no_ijazah` varchar(45) DEFAULT NULL,
   `no_skhun` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ppdb_asalsekolah`
+-- Dumping data untuk tabel `ppdb_smkarmaniyah`
 --
 
-INSERT INTO `ppdb_asalsekolah` (`id`, `id_siswa`, `npsn_sekolah`, `asal_sekolah`, `nama_sekolah`, `status_sekolah`, `alamat_sekolah`, `no_ijazah`, `no_skhun`) VALUES
-(1, 1, NULL, 'Sekolah Menengah Pertama (SMP)', 'smpn 1 parigi', 'Negeri', 'Parigi Jawa Barat', '3536498', '23461677'),
+INSERT INTO `ppdb_smkarmaniyah` (`id`, `id_siswa`, `npsn_sekolah`, `asal_sekolah`, `smk armaniyah`, `swasta`, `alamat_sekolah`, `no_ijazah`, `no_skhun`) VALUES
+(1, 1, NULL, 'Sekolah Menengah Kejuruan (SMK)', 'smk armaniyah', 'swasta', 'Bekasi Jawa Barat', '3536498', '23461677'),
 (2, 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (3, 3, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
