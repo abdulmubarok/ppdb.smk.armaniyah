@@ -1,0 +1,20 @@
+
+Options All -Indexes
+ErrorDocument 404 http://localhost/ppdb56/home?page=404
+ErrorDocument 403 http://localhost/ppdb56/home?page=403
+<IfModule mod_rewrite.c>
+RewriteEngine on
+#Redirect to Https
+#RewriteCond %{HTTPS} off
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^home index.php [NC,L]
+RewriteRule ^buat-akun buat.akun.php [NC,L]
+RewriteRule ^daftar daftar.php [NC,L]
+RewriteRule ^profile profile.php [NC,L]
+RewriteRule ^bayar pembayaran.php [NC,L]
+RewriteRule ^report pdf.php [NC,L]
+RewriteRule ^kartu kartu.php [NC,L]
+RewriteRule ^status status.php [NC,L]
+RewriteRule ^login login.php [NC,L]
+</IfModule>

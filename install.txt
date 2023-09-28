@@ -1,0 +1,16 @@
+
+/*******************************
+--------------------------
+* PANDUAN INSTALASI CEPAT
+--------------------------
+1. Buat database
+2. Import database.sql yang terdapat pada aplikasi
+3. Buka folder config dan atur database.php sesuai database masing2
+4. Atur file HTACCESS, sesuaikan dengan domain masing - masing
+   misal http://localhost/ppdb rubah jadi http://ppdb.namadomain.com
+5. Jika layanan website Anda menggunakan https/ssl, untuk dapat mengarahkannya supaya menggunakan
+   https. Anda dapat menghapus tanda pagar pada baris berikut di file htaccess
+   	#RewriteCond %{HTTPS} off
+	#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+	#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
