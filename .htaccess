@@ -1,4 +1,3 @@
-
 Options All -Indexes
 ErrorDocument 404 http://localhost/ppdb56/home?page=404
 ErrorDocument 403 http://localhost/ppdb56/home?page=403
