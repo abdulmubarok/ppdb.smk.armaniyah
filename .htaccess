@@ -1,6 +1,6 @@
 Options All -Indexes
-http://localhost/ppdb56/home?page=404
-http://localhost/ppdb56/home?page=403
+http://localhost/ppdb56/home
+http://localhost/ppdb56/home
 <IfModule mod_rewrite.c>
 RewriteEngine on
 #Redirect to Https
